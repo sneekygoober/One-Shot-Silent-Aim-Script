@@ -6,7 +6,9 @@ local newcclosure = newcclosure or clonefunction;
 local executor = (identifyexecutor and select(2, pcall(identifyexecutor))) and identifyexecutor() or "Your executor";
 
 if not (hookfunction and require) then
-    return error(executor .. " is missing " .. (not hookfunction and "hookfunction " or "") .. (not require and "require" or ""));
+    local err = executor .. " is missing " .. (not hookfunction and "hookfunction " or "") .. (not require and "require" or "");
+    SG["error"](err);
+    return error(err);
 end;
 
 local RS: ReplicatedStorage = cloneref(game:GetService("ReplicatedStorage"));
@@ -62,3 +64,5 @@ local old; old = clonefunction(hookfunction(cast, newcclosure(function(_, __, b,
 
     return old(_, __, b, ...);
 end)));
+
+SG["success"]("Silent aim successfully executed!\n\nIf you have any issues press F9 or type /console in chat and then send me a screenshot of the console.\n\nDO NOT EXECUTE MORE THAN ONCE IN A SERVER!");
