@@ -1,2 +1,2 @@
 # One-Shot-Silent-Aim-Script
-This is a basic silent aim with no UI for https://www.roblox.com/games/105241313130846/One-Shot.  Please note that your executor must at least support hookfunction and require.
+This script is open-source and free. Anyone can modify/use this script without restrictions. You can also view this script over at [scriptblox.com](https://scriptblox.com/script/UPDATE-1-One-Shot-Silent-Aim-Keyless-103854) or [haxhell.com](https://haxhell.com/scripts/update-1-one-shot-one-shot-silent-aim-keyless) or [rscripts.net](https://rscripts.net/script/one-shot-silent-aim-keyless-O8Rw).
